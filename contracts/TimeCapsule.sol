@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-// address: 0x8115C8f55587C8232f71aDCd552E36881A8A9b99
 pragma solidity ^0.7.6;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
@@ -99,6 +98,13 @@ contract TimeCapsule is ERC721 {
         return string(abi.encodePacked(base, tokenId));
     }
 
+    function viewTitle(uint256 tokenId) public view returns (string memory) {
+        require(_msgSender()==ownerOf(tokenId), "TimeCapsule: URI being accessed by non-owner");
+        require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
+
+        return _descs[tokenId];
+    }
+
     function _setDueDate(uint256 tokenId, uint256 dueDate) internal {
         require(_exists(tokenId), "ERC721Metadata: URI set of nonexistent token");
         _dueDates[tokenId] = dueDate;
@@ -122,7 +128,4 @@ contract TimeCapsule is ERC721 {
         require(_exists(tokenId),"ERC721Metadata: URI set of nonexistent token");
         _descs[tokenId] = _desc;
     }
-
-    // Send all the money to MyAccount
-    // function giveThemAll2Me() public returns (bool)
 }
