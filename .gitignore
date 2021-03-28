@@ -1,0 +1,5 @@
+artifacts
+cache
+hardhat.config.js
+scripts
+node_modules
