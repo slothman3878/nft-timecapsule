@@ -21,5 +21,5 @@ Working demo can be found <a href="https://slothmanxyz.github.io/nft-timecapsule
 
 ## Miscellaneous Thoughts (Limitations to current design)
 
-* Currently, because the capsule messages are stored on IPFS, so preservation is not guaranteed. Pinning using third party services like <a href="https://pinata.cloud">Pinata</a> is a possible option, but because the hashes themselves are hidden from the users, the users themselves have no way of ensuring their messages from disappearing.
+* Because the messages are stored on IPFS, preservation of the capsules is not guaranteed. Pinning using third party services like <a href="https://pinata.cloud">Pinata</a> is a possible option, but because the hashes themselves are hidden from the users, the users themselves have no way of ensuring their messages from disappearing.
 * The title for capsules is limited to 60 characters (or will be), but limitation is dealt by on the frontend and not by the contract itself.
