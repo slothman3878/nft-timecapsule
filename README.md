@@ -1,7 +1,7 @@
 # NFT Timecapsule
 
 The ```Timecapsule.sol``` contract extends <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721">Openzeppelin's ERC721</a> contract (version 3.4.0). <br>
-Tested and deployed using <a href="https://hardhat.org/">Hardhat</a>. <br>
+Tested and deployed using <a href="https://hardhat.org/">Hardhat</a> and <a href="https://alchemyapi.io">Alchemy</a>. <br>
 Messages in the capsules themselves are uploaded to IPFS. <br>
 Currently deployed onto the Rinkeby network. <br>
 Frontend can be found <a href="https://github.com/slothmanxyz/nft-timecapsule-demo">here</a>. <br>
