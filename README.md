@@ -16,7 +16,6 @@ Demo can be found <a href="https://slothmanxyz.github.io/nft-timecapsule-demo">h
 
 ## TODOs
 
-- Deploy on to rinkeby network.
 - Cleanup frontend.
 
 ## Miscellaneous Thoughts
